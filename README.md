@@ -52,7 +52,7 @@
         bootstrap-servers: localhost:29092
     ```
 3. Удалите докер-контейнеры и связанные с ними вольюмы
-4. Запустите кафку `docker compose up`
+4. Запустите кафку `docker-compose up`
 5. Запустите приложение `./gradlew bootRun`
 
 
