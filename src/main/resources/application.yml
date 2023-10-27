@@ -1,0 +1,10 @@
+spring:
+  kafka:
+    bootstrap-servers: kafka:29092
+    consumer:
+      group-id: documents-group
+
+kafka:
+  topic-names:
+    documents-in: "documents-in"
+    documents-out: "documents-out"
