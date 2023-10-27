@@ -3,7 +3,6 @@ package com.example.kafkatest;
 import com.example.kafkatest.dto.DocumentDto;
 import com.example.kafkatest.dto.Status;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,7 +16,7 @@ public class TestController {
 
     private final KafkaProducer kafkaProducer;
 
-    @GetMapping
+    @PostMapping
     public void send() {
         kafkaProducer.send(DocumentDto.builder()
                 .id(1L)
